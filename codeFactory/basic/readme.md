@@ -2,31 +2,31 @@
 
 ## var
 
-```
+```dart
 var name = '홍길동';
 ```
 
 ## int
 
-```
+```dart
 int num = 10;
 ```
 
 ## double
 
-```
+```dart
 double num = 2.5;
 ```
 
 ## boolean
 
-```
+```dart
 bool isTrue = false;
 ```
 
 ## String
 
-```
+```dart
 String str = '안녕하세요';
 ```
 
@@ -38,14 +38,14 @@ String str = '안녕하세요';
 
 어떤 타입이든 넣을 수 있음.
 
-```
+```dart
   dynamic name = '홍길동';
   print(name.runtimeType);  // String
 ```
 
 ## var와 dynamic의 차이?
 
-```
+```dart
   dynamic name = '홍길동';
   print(name.runtimeType);  // String
   name = 2;
@@ -79,7 +79,7 @@ Null이 될 수 없다.
 
 아무런 값도 가지고 있지 않는 값.
 
-```
+```dart
   String name = '홍길동';
   name = null;  >> error
 
@@ -115,7 +115,7 @@ Null이 될 수 없다.
 
 ## `is`
 
-```
+```dart
   print('a' is String);     // true
   print('a' is! String);    // false
 ```
@@ -124,7 +124,7 @@ Null이 될 수 없다.
 
 # List
 
-```
+```dart
 List<String> list = [];
 ```
 
@@ -132,7 +132,7 @@ List<String> list = [];
 
 ## index
 
-```
+```dart
 list[0];
 ```
 
@@ -164,7 +164,7 @@ list[0];
 
 있어도 되고 없어도 되는 파라미터
 
-```
+```dart
 addNum(int x, [int y = 0]){
     int sum = x + y;
 }
@@ -181,7 +181,7 @@ optional 로 선언된 인자가 전달되지 않는 경우 빨간 줄이 생긴
 
 순서가 중요하지 않은 파라미터
 
-```
+```dart
 void main() {
   addNumbers(x: 1, y: 3);
 }
@@ -200,13 +200,13 @@ Named Parameter에서 인자에 `required`를 빼고 기본 값을 할당해주�
 
 ## typedef
 
-```
+```dart
 typedef Operation = double Function(int x, int y);
 ```
 
 리턴 타입과 인자 형식[시그니처]이 완전히 일치하는 경우
 
-```
+```dart
 void main() {
   s operation = add;
 
